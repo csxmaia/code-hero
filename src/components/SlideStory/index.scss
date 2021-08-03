@@ -1,0 +1,24 @@
+.slider-story {
+  h4 {
+    margin: 0;
+    padding-left: 8px;
+  }
+  .slider {
+    background-color: #E5E5E5;
+    display: flex;
+    column-gap: 12px;
+    padding: 4px;
+    overflow-x: scroll;
+    .slider-item {
+      height: 160px;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      width: 120px;
+      min-width: 120px;
+      span {
+        text-align: center;
+      }
+    }
+  }
+}

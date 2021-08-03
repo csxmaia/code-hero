@@ -1,0 +1,37 @@
+@import "../../assets/master";
+
+.hero-list-grid {
+  width: 100%;
+  .head {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    padding: 8px 24px;
+    div span {
+      font-size: 12px;
+      color: #8E8E8E;
+    }
+    @media screen and (max-width: $mobile) {
+      padding: 8px 16px;
+      grid-template-columns: 48px 1fr;
+      column-gap: 24px;
+      div {
+        display: none;
+        &:first-child {
+          display: block;
+          grid-column: 2;
+        }
+      }
+    }
+  }
+  .body {
+    > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      > span {
+        text-align: center;
+      }
+    }
+  }
+}

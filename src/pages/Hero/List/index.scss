@@ -1,0 +1,40 @@
+@import "../../../assets/master";
+
+.hero-list {
+  .title {
+    h2 {
+      font-weight: 700;
+      font-size: 32px;
+      @media screen and (max-width: $mobile) {
+        font-size: 24px;
+        text-align: center;
+        margin: 0 0 16px;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      color: #555555;
+      margin: 0 0 8px;
+      @media screen and (max-width: $mobile) {
+        text-align: center;
+      }
+    }
+
+    input {
+      width: 295px;
+      margin-bottom: 24px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-origin: content-box;
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

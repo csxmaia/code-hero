@@ -1,0 +1,12 @@
+@import "../assets/master";
+
+.container {
+  width: 1140px;
+  margin: auto;
+  margin-bottom: 120px;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+}

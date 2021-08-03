@@ -1,0 +1,82 @@
+@import "../assets/master";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  height: 64px;
+  padding: 0 24px;
+  .logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      width: 96px;
+      height: 24px;
+    }
+  }
+  .right {
+    display: flex;
+    gap: 12px;
+    @media screen and (max-width: $mobile) {
+      display: grid;
+      grid-template-areas: "name icon" "test-name icon";
+      column-gap: 16px;
+      row-gap: 0;
+    }
+    .name {
+      grid-area: name;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: $mobile) {
+        justify-content: flex-end;
+      }
+      span {
+        font-weight: 700;
+        color: #555555;
+        @media screen and (max-width: $mobile) {
+          font-size: 12px;
+        }
+      }
+    }
+    .test-name {
+      grid-area: test-name;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: $mobile) {
+        justify-content: flex-end;
+      }
+      span {
+        font-weight: 400;
+        color: #555555;
+        @media screen and (max-width: $mobile) {
+          font-size: 12px;
+        }
+      }
+    }
+    .icon {
+      grid-area: icon;
+      display: flex;
+      align-items: center;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8px;
+        height: 8px;
+        padding: 12px;
+        background-color: #F5F5F5;
+        border-radius: 4px;
+        &:hover {
+          background-color: #555555;
+          color: #FFFFFF;
+        }
+        span {
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
